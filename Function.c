@@ -112,4 +112,38 @@ int main ()
      printf("Sum is %d",sum);
  }  */
 
+int fib(int n);
+int main ()
+{
+    int n;
+    printf ("Enter your number :");
+    scanf("%d",&n);
+    if (n <= 0) {
+        printf("Please enter a positive integer.\n");
+        return 1;
+    }
+    printf("The Fibonacci series is: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", fib(i));  
+    }
+    printf("\n"); 
+
+    return 0;
+}
+int fib (int n)
+{
+    if(n==1)
+    {
+        return 0;
+    }
+    else if (n==2)
+    {
+        return 1;
+    }
+  int  fibnm1 = fib(n-1);
+  int  fibnm2 = fib(n-2);
+  int  fibn = fibnm1 + fibnm2 ;
+    return fibn;
+}
+
 
