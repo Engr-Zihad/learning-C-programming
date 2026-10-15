@@ -238,3 +238,32 @@ void st(int arr[][11],int n ,int m,int number)
 }
 
 
+
+
+#include <stdio.h>
+int main ()
+{
+    int arrA[10];
+    int arrB[10];
+    int arrAB[10];
+    for (int i = 0 ; i<10 ; i++)
+        {
+            arrA[i] = (i+1)*12;
+            printf("%d\t",arrA[i]);
+        }
+    printf("\n");
+      for (int i = 0 ; i<10 ; i++)
+        {
+            arrB[i] = (i+1)*10;
+            printf("%d\t",arrB[i]);
+        }
+    printf("\n");
+    for (int i = 0; i<10 ; i++)
+        {
+            arrAB[i]=arrA[i]*arrB[i];
+            printf("%d\t",arrAB[i]);
+        }
+    return 0;
+}
+
+
